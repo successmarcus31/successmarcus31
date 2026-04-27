@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wallpaper Installer Expectations – Furniture & Then Some</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #f0f0f0;
+      font-family: Arial, sans-serif;
+      padding: 40px 20px;
+      color: #202124;
+    }
+
+    .page {
+      background: #ffffff;
+      width: 816px;
+      min-height: 1056px;
+      margin: 0 auto;
+      padding: 64px 72px 80px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 28px;
+      border-bottom: 2px solid #202124;
+      padding-bottom: 18px;
+    }
+
+    .header .company {
+      font-size: 13pt;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #202124;
+    }
+
+    .header .doc-title {
+      font-size: 11pt;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #555;
+      margin-top: 4px;
+    }
+
+    .meta-grid {
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      margin-top: 12px;
+      font-size: 10.5pt;
+    }
+
+    .meta-grid span strong {
+      font-weight: bold;
+    }
+
+    /* Section wrapper */
+    .section {
+      margin-bottom: 22px;
+    }
+
+    /* Section title bar */
+    .section-title {
+      font-size: 10pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      background: #202124;
+      color: #ffffff;
+      padding: 5px 10px;
+      margin-bottom: 10px;
+    }
+
+    .section-title.light {
+      background: #f5f5f5;
+      color: #202124;
+      border-left: 4px solid #202124;
+    }
+
+    /* Rate table */
+    .rate-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 10.5pt;
+      margin-bottom: 6px;
+    }
+
+    .rate-table th {
+      background: #f5f5f5;
+      text-align: left;
+      padding: 6px 10px;
+      font-weight: bold;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .rate-table td {
+      padding: 6px 10px;
+      border-bottom: 1px solid #eee;
+      vertical-align: top;
+    }
+
+    .rate-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .rate {
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
+    /* Two-column layout */
+    .two-col {
+      display: flex;
+      gap: 24px;
+    }
+
+    .two-col .col {
+      flex: 1;
+    }
+
+    /* Sub-section label */
+    .sub-label {
+      font-size: 10.5pt;
+      font-weight: bold;
+      margin-bottom: 4px;
+      margin-top: 10px;
+      color: #202124;
+    }
+
+    .sub-label:first-child {
+      margin-top: 0;
+    }
+
+    /* Lists */
+    ul {
+      margin-left: 18px;
+    }
+
+    ul li {
+      font-size: 10.5pt;
+      line-height: 1.75;
+      color: #2d2d2d;
+    }
+
+    p.body-text {
+      font-size: 10.5pt;
+      line-height: 1.75;
+      color: #2d2d2d;
+    }
+
+    /* Warning box */
+    .warning-box {
+      background: #fff8f8;
+      border-left: 4px solid #cc0000;
+      padding: 10px 14px;
+    }
+
+    .warning-box ul li {
+      color: #2d2d2d;
+    }
+
+    /* Bonus callout */
+    .bonus-box {
+      background: #f0f7f0;
+      border-left: 4px solid #2e7d32;
+      padding: 10px 14px;
+      margin-top: 10px;
+    }
+
+    .bonus-box ul li {
+      color: #2d2d2d;
+    }
+
+    /* Divider */
+    .divider {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 20px 0;
+    }
+
+    /* Signature */
+    .sig-block {
+      margin-top: 10px;
+    }
+
+    .sig-row {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .sig-field p {
+      font-size: 10.5pt;
+      margin-bottom: 4px;
+    }
+
+    .sig-line {
+      border-bottom: 1px solid #333;
+      width: 340px;
+      height: 24px;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 10pt;
+      color: #555;
+      border-top: 1px solid #e0e0e0;
+      padding-top: 12px;
+    }
+
+    .footer strong {
+      display: block;
+      font-size: 11pt;
+      color: #202124;
+      margin-bottom: 2px;
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="company">Furniture &amp; Then Some</div>
+    <div class="doc-title">Wallpaper Installer — Expectations &amp; Pay Sheet</div>
+    <div class="meta-grid">
+      <span><strong>Position:</strong> Wallpaper Installer</span>
+      <span><strong>Compensation:</strong> Per Job (Piece Rate)</span>
+    </div>
+  </div>
+
+  <!-- Pay Structure -->
+  <div class="section">
+    <div class="section-title">Pay Structure — Installer Rate</div>
+    <table class="rate-table">
+      <thead>
+        <tr>
+          <th>Service Type</th>
+          <th>Rate per Sq Ft</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Peel &amp; Stick Wallpaper</td>
+          <td class="rate">$1.75 – $2.25</td>
+        </tr>
+        <tr>
+          <td>Pasted Wallpaper</td>
+          <td class="rate">$2.00 – $2.75</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="body-text" style="font-size:9.5pt; color:#666; margin-top:6px;">
+      Rate is determined by experience, speed, and quality of work.
+    </p>
+  </div>
+
+  <!-- Pay Growth System -->
+  <div class="section">
+    <div class="section-title">Pay Growth System</div>
+    <table class="rate-table">
+      <thead>
+        <tr>
+          <th>Level</th>
+          <th>Rate per Sq Ft</th>
+          <th>Criteria</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Training Phase</td>
+          <td class="rate">$1.50 – $1.75</td>
+          <td>Working under supervision</td>
+        </tr>
+        <tr>
+          <td>Standard Installer</td>
+          <td class="rate">$1.75 – $2.25</td>
+          <td>Consistent quality and reliability</td>
+        </tr>
+        <tr>
+          <td>Top Performer</td>
+          <td class="rate">$2.50 – $2.75 + bonuses</td>
+          <td>Speed, clean installs, reviews, leadership</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="bonus-box">
+      <div class="sub-label" style="margin-top:0;">Raises &amp; Bonuses</div>
+      <ul>
+        <li>Raises are <strong>earned, not given by time</strong> — rate increases by <strong>+$0.25/sq ft</strong> when you consistently hit speed targets and maintain clean installs with no callbacks.</li>
+        <li><strong>$25 – $50 per 5-star review</strong> when the client mentions you by name.</li>
+        <li>Bonuses for fast &amp; clean installs, no callbacks (30+ days), and leading jobs independently.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Expectations -->
+  <div class="section">
+    <div class="section-title">Expectations (Non-Negotiable)</div>
+    <div class="two-col">
+      <div class="col">
+        <div class="sub-label">Professionalism</div>
+        <ul>
+          <li>On time means <strong>10 minutes early</strong></li>
+          <li>Respect every client and their home</li>
+          <li>Maintain a clean, professional appearance</li>
+        </ul>
+
+        <div class="sub-label">Work Quality</div>
+        <ul>
+          <li>Straight seams, no bubbles, no lifting</li>
+          <li>Precision over speed — consistency first</li>
+        </ul>
+      </div>
+      <div class="col">
+        <div class="sub-label">Clean Work Area</div>
+        <ul>
+          <li>No mess left behind</li>
+          <li>Protect floors, furniture, and walls</li>
+          <li>Full cleanup after every job</li>
+        </ul>
+
+        <div class="sub-label">Efficiency</div>
+        <ul>
+          <li>Stay on task — no excessive phone use</li>
+          <li>Hit expected completion timelines</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Immediate Termination -->
+  <div class="section">
+    <div class="section-title">Immediate Termination</div>
+    <div class="warning-box">
+      <ul>
+        <li>Discussing pricing with clients</li>
+        <li>No call / no show</li>
+        <li>Repeated lateness</li>
+        <li>Poor quality work</li>
+        <li>Disrespect to clients or team members</li>
+        <li>Damaging property due to carelessness</li>
+        <li>Taking side jobs from company clients</li>
+        <li>Showing up under the influence</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Communication Rules -->
+  <div class="section">
+    <div class="section-title">Communication Rules</div>
+    <ul>
+      <li>Confirm jobs the day before</li>
+      <li>Notify the team immediately if running late</li>
+      <li>Report any issues or concerns immediately</li>
+      <li><strong>Do not</strong> quote prices or negotiate with clients directly</li>
+    </ul>
+  </div>
+
+  <!-- Two-col: Success + Growth -->
+  <div class="two-col" style="margin-bottom:22px;">
+    <div class="col">
+      <div class="section-title light">What Success Looks Like</div>
+      <ul>
+        <li>You show up without being chased</li>
+        <li>Your work is clean and consistent</li>
+        <li>Clients trust you in their home</li>
+        <li>You move with urgency and pride</li>
+        <li>You represent the brand at a high level</li>
+      </ul>
+    </div>
+    <div class="col">
+      <div class="section-title light">Growth Opportunity</div>
+      <ul>
+        <li>Lead installer roles</li>
+        <li>Higher-paying jobs</li>
+        <li>Consistent weekly work</li>
+        <li>Long-term growth with the company</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Agreement -->
+  <div class="section">
+    <div class="section-title">Agreement</div>
+    <p class="body-text" style="margin-bottom:16px;">
+      I understand the expectations, standards, and pay structure listed above and agree to uphold them as a representative of Furniture &amp; Then Some.
+    </p>
+    <div class="sig-block">
+      <div class="sig-row">
+        <div class="sig-field">
+          <p><strong>Name:</strong></p>
+          <div class="sig-line"></div>
+        </div>
+        <div class="sig-field">
+          <p><strong>Signature:</strong></p>
+          <div class="sig-line"></div>
+        </div>
+        <div class="sig-field">
+          <p><strong>Date:</strong></p>
+          <div class="sig-line" style="width:200px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <strong>Furniture &amp; Then Some</strong>
+    We grow together — welcome to the team.
+  </div>
+
+</div>
+</body>
+</html>
