@@ -220,7 +220,7 @@ cell_text(hdr2[1], "Rate / Sq Ft",  bold=True)
 cell_text(hdr2[2], "Criteria",      bold=True)
 
 growth_data = [
-    ("Training Phase",     "$1.50 – $1.75",      "Working under supervision"),
+    ("Training Phase",     "$1.25/sq ft",         "Starting rate — all new installers begin here"),
     ("Standard Installer", "$1.75 – $2.25",      "Consistent quality and reliability"),
     ("Top Performer",      "$2.50 – $2.75\n+ bonuses", "Speed, clean installs, reviews, leadership"),
 ]
@@ -229,6 +229,17 @@ for i, (lvl, rate, crit) in enumerate(growth_data):
     cell_text(row.cells[0], lvl)
     cell_text(row.cells[1], rate, bold=True)
     cell_text(row.cells[2], crit)
+
+# Plain-language starting pay notice
+p_notice = doc.add_paragraph()
+p_notice.paragraph_format.space_before = Pt(10)
+p_notice.paragraph_format.space_after  = Pt(6)
+r_notice = p_notice.add_run(
+    "All new installers start at the Training Pay rate of $1.25 per square foot. "
+    "This is your starting pay while you learn our standards and processes. "
+    "As your skills, speed, and quality improve, your pay rate will increase accordingly."
+)
+set_font(r_notice, size=10.5)
 
 # Bonus callout (shaded green)
 p_bonus = doc.add_paragraph()
